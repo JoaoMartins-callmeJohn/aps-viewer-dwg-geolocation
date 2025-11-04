@@ -111,7 +111,7 @@
     if (geolocationExtension.hasGeolocationData()){
         let lonlat = geolocationExtension.lmvToLonLat(scenepoint);
         console.log('Lonlat:', lonlat);
-        Swal.fire('Geolocation data found', 'Longitude: ' + lonlat.longitude + ' Latitude: ' + lonlat.latitude, 'success');
+        Swal.fire('Geolocation data found', 'Longitude: ' + lonlat.x + ' Latitude: ' + lonlat.y + ' Elevation: ' + lonlat.z, 'success');
     }
     else{
         Swal.fire('No geolocation data found', 'Please make sure you have georeferenced your model and is in a 3d view', 'error');
